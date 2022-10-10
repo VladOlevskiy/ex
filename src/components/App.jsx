@@ -1,8 +1,8 @@
 import { Box } from './Box/Box';
 import { Profile } from './Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
+import StatDates from '../data.json';
 import userDate from '../user.json';
-
-// const imageUrl = user.avatar;
 
 export const App = () => {
   return (
@@ -21,6 +21,7 @@ export const App = () => {
       >
         <Profile data={userDate}></Profile>
       </Box>
+      <Statistics data={StatDates} title="Upload stats"></Statistics>
     </Box>
   );
 };
