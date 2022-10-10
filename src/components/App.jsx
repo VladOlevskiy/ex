@@ -1,6 +1,8 @@
 import { Box } from './Box/Box';
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
+import { FriendList } from './FriendList/FriendList';
+import friendsData from '../friends.json';
 import StatDates from '../data.json';
 import userDate from '../user.json';
 
@@ -22,6 +24,7 @@ export const App = () => {
         <Profile data={userDate}></Profile>
       </Box>
       <Statistics data={StatDates} title="Upload stats"></Statistics>
+      <FriendList friends={friendsData}></FriendList>
     </Box>
   );
 };
