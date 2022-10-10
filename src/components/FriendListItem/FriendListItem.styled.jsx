@@ -19,6 +19,16 @@ export const Status = styled.span`
   border-radius: 50%;
   display: inline-block;
   margin-right: 5px;
+  background-color: ${({ isOnline }) => {
+    switch (isOnline) {
+      case true:
+        return 'blue';
+      case false:
+        return 'red';
+      default:
+        return 'green';
+    }
+  }};
 `;
 
 export const Img = styled.img`
