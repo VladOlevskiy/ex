@@ -1,12 +1,8 @@
 import { Box } from './Box/Box';
 import { Profile } from './Profile/Profile';
-import { Statistics } from './Statistics/Statistics';
-import { FriendList } from './FriendList/FriendList';
-import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 import userDate from '../user.json';
-import StatDates from '../data.json';
-import friendsData from '../friends.json';
-import transactionData from '../transactions.json';
+
+// const imageUrl = user.avatar;
 
 export const App = () => {
   return (
@@ -25,9 +21,6 @@ export const App = () => {
       >
         <Profile data={userDate}></Profile>
       </Box>
-      <Statistics data={StatDates} title="Upload stats"></Statistics>
-      <FriendList friends={friendsData}></FriendList>
-      <TransactionHistory data={transactionData}></TransactionHistory>
     </Box>
   );
 };
